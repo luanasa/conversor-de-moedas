@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <title>Conversor</title> 
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" media="(min-width: 599px)" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/conversor.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Descubra os valores em real R$
+      <select id="moedas">
+        <option selected>Selecione a moeda</option>
+        <option value='EUR'>Euro</option>
+        <option value='USD'>Dólar</option>
+        <option value='JPY'>Iene Japonês</option>
+        <option value='BTC'>Bitcoin</option>
+      </select>
+    </p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+    <label for="moeda">Insira o valor</label><br>
+    <input type="number" id="valor" size="2" /><br>
+    <button type="submit" onclick="converter()">Converter</button>
+ <!--   <div id="valorConvertido"></div> --> 
+    <h3 id="saida"></h3>
+    <span id="atualizacao"></span>
+  </div>
+  <a href="https://github.com/luanasa" target="_blank">
+    <img src="https://www.logo.wine/a/logo/GitHub/GitHub-Icon-White-Dark-Background-Logo.wine.svg" alt="" class="alura-logo">
+
+</body>
+</html>
