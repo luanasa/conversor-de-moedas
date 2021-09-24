@@ -2,4 +2,4 @@
 
 Desafio imersão dev da Alura concluído. 
 
-![image](https://user-images.githubusercontent.com/38231334/133317165-7635b2ee-babf-4f0e-b38d-64180851f121.png)
+![image](https://user-images.githubusercontent.com/38231334/134718271-0d302b26-6ee5-4085-aed3-b2eaf43c6073.png)
