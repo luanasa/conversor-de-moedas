@@ -4,6 +4,7 @@ Desafio imersão dev da Alura concluído.
 
 ☁️ https://luanasa.github.io/conversor-de-moedas/
 
-![image](https://user-images.githubusercontent.com/38231334/167278495-8a3125e3-e230-4bae-9d56-e314ac92c834.png)
+![frame_generic_light (1)](https://github.com/luanasa/conversor-de-moedas/assets/38231334/2d7c3f1b-ba0c-4625-8e62-56b28eb13855)
+
 
 
