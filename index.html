@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-   <meta charset="UTF-8">
-   <title>Conversor</title> 
-   <meta name="viewport" content="width=device-width,initial-scale=1">
-   <link rel="stylesheet" media="(min-width: 599px)" href="./assets/css/style.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   
+  <meta charset="UTF-8">
+  <title>Currency Converter</title> 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" media="(min-width: 599px)" href="./assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1 class="page-title">
-      Conversor de moedas
-    </h1>
-    <p class="page-subtitle">
-      Descubra os valores em real R$
-      <select id="moedas">
-        <option selected>Selecione a moeda</option>
-        <option value='EUR'>Euro</option>
-        <option value='USD'>Dólar</option>
-        <option value='JPY'>Iene Japonês</option>
-        <option value='BTC'>Bitcoin</option>
-      </select>
-    </p>
-    <label for="moeda">Insira o valor</label><br>
-    <input type="number" id="valor" size="2" /><br>
-    <button class="botao" onclick="converter()">Converter</button>
-    <h3 id="saida"></h3>
-    <span id="atualizacao"></span>
-    <img src="https://cdn-icons.flaticon.com/png/512/2896/premium/2896830.png?token=exp=1651975628~hmac=55f7a34e731ab9b0953aa4f27f056ab9" alt="Imagem de tres personagens entrando em um funil e em baixo saindo duas moedas" >
+    
+    <div class="principal">
+      <h1>
+        Conversor de moedas
+      </h1>
+      <p>
+        Descubra os valores em R$
+        <select id="moedas">
+          <option selected>Selecione a moeda</option>
+          <option value='EUR'>Euro</option>
+          <option value='USD'>Dólar</option>
+          <option value='JPY'>Iene Japonês</option>
+          <option value='BTC'>Bitcoin</option>
+        </select>
+      </p>
+      
+      <div class="btn">
+        <label for="moeda">Insira o valor</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button onclick="converter()">Converter</button>
+      </div>
+
+      <h3 id="saida"></h3>
+      <span id="atualizacao"></span>
+    </div>
+    
+    <div class="image-div">
+      <img src="./assets/money.svg" alt="">
+    </div>
   </div>
 
 
 
   <a href="https://github.com/luanasa" target="_blank">
-    <img src="https://www.logo.wine/a/logo/GitHub/GitHub-Icon-White-Dark-Background-Logo.wine.svg" alt="" class="git-logo">
-    <script src="./assets/js/conversor.js"></script>
-
+    <img src="./assets/git.svg" alt="" class="git-logo">
+  
+<script src="./assets/js/conversor.js"></script>
 </body>
 </html>

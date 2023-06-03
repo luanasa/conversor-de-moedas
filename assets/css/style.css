@@ -1,29 +1,87 @@
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
   min-height: 400px;
-  background-color: #000000;
-  margin-top: 30px;
+  margin-top: 80px;
   color: #fffafa;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.principal p{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#moedas {
+  height: 2rem;
+  padding: 5px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.btn input {
+  height: 1.5rem;
   text-align: center;
-  padding: 20px;
-  height: 100vh;
 }
 
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
+.btn button {
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 20px 30px;
+  perspective: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+  cursor: pointer;
 }
 
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
+button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(320deg, rgba(0, 140, 255, 0.678), rgba(128, 0, 128, 0.308));
+  z-index: 1;
+  transition: background 3s;
 }
 
-.page-logo {
-  width: 200px;
+button:hover::before {
+  animation: rotate 1s;
+  transition: all .5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .git-logo {
@@ -32,39 +90,3 @@ body {
   top: 10px;
   right: 10px;
 }
-
-input {
-  margin: 12px;
-  padding: 6px;
-  border-radius: 5px;
-}
-
-label {
-  color: white;
-}
-
-.botao{
-  text-align: center;
-  position: center;
-  background-color: #FFF14D;
-  margin-top: 12px;
-  padding: 0.5rem 2rem;
-  border-radius: 5px;
-  transition: 0.3s;
-  font-size: 0.9rem;
-  border: none;
-}
-
-.botao:hover {
-background-color: rgba(255, 255, 255, 204);
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 30px;
-}
-/* #valorConvertido {
-  color: #fffafa;
-  font-size: 20px;
-  margin-top: 30px;
-} */
