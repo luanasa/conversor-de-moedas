@@ -63,4 +63,4 @@ Um conversor de moedas completo e elegante construído com React, TypeScript e T
 - Carregamento inicial < 2s
 - Conversões instantâneas
 - Cache inteligente de taxas
-- Otimização para mobile
+- Otimização para mobile.
