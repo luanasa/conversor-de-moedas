@@ -1,53 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Currency Converter</title> 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    
-    <div class="principal">
-      <h1>
-        Conversor de moedas
-      </h1>
-      <p>
-        Descubra os valores em R$
-        <select id="moedas">
-          <option selected>Selecione a moeda</option>
-          <option value='EUR'>Euro</option>
-          <option value='USD'>Dólar</option>
-          <option value='JPY'>Iene Japonês</option>
-          <option value='BTC'>Bitcoin</option>
-        </select>
-      </p>
-      
-      <div class="btn">
-        <label for="moeda">Insira o valor</label><br>
-        <input type="number" id="valor" size="2" /><br>
-        <button onclick="converter()">Converter</button>
-      </div>
-
-      <h3 id="saida"></h3>
-      <span id="atualizacao"></span>
-    </div>
-    
-    <div class="image-div">
-      <img src="./assets/money.svg" alt="">
-    </div>
-  </div>
-
-
-
-  <a href="https://github.com/luanasa" target="_blank">
-    <img class="git-logo" src="./assets/git.svg" alt="">
-  
-<script src="./assets/js/conversor.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas - Conversão em Tempo Real</title>
+    <meta name="description" content="Conversor de moedas moderno com taxas em tempo real, gráficos históricos e suporte a mais de 20 moedas e criptomoedas." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
